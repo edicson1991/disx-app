@@ -1,0 +1,21 @@
+.banner {
+    display: flex; /* Activar el modo flexbox */
+    justify-content: center; /* Alinear elementos horizontalmente al centro */
+    align-items: center; /* Alinear elementos verticalmente al centro */
+    gap: 70px 40px;
+    margin: 70px auto; /* Agregar margen superior e inferior y centrar horizontalmente */
+    width: 70%; /* Ajustar el ancho del banner */
+    height: 70px; /* Ajustar altura del banner */
+    max-width: 1000px; /* Ancho máximo para pantallas grandes */
+    border: 0.5px solid #00000020;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px 1px #00000020;
+  }
+  
+  .banner img {    
+    max-width: 200px; /* Ancho máximo para cada imagen */
+    height: auto; /* Mantener la proporción de aspecto de las imágenes */
+  }
+
+ 
+  
