@@ -1,0 +1,135 @@
+.loguin-box {
+    background-color: #ffffff ;
+    width: 500px;
+    height: 600px;
+    border-color: #000000;
+   margin-top: 150px;
+   margin-inline-start: 600px;
+   padding-bottom: 80px;
+   padding-top: 15px;
+  border: 20px solid #ED297A;
+  border-radius: 20px ;
+  box-shadow: 20px 20px 20px gray;
+  
+  
+   
+    
+}
+
+
+.loguin-img-box {
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 30px;
+    background-color:#ED297A;
+
+    
+    
+}
+
+.loguin-img img {
+padding-top: 20px;
+margin-left: 100px;
+
+    width: 200px;
+    height: 200px;
+}
+
+.loguin-box-credentials {
+   
+    color: black;
+    margin-top: 50px;
+    padding-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 30px;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.input-nombre {
+    border:2px solid #ED297A ;
+    margin-inline-start: 17px;
+    border-radius: 10px;
+    width: 230px;
+    height: 30px;
+    font: verdana;
+    font-size: 20px;
+    
+}
+
+.input-contraseña {
+    border:2px solid #ED297A ;
+    margin-inline-start: 5px;
+    border-radius: 10px;
+    width: 230px;
+    height: 30px;
+    font-size: 20px;
+}
+h2 {
+    font:verdana;
+    font-size: 26px;
+    color: #ED297A ;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+
+.loguin-box-button {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font:verdana;
+    font-size: 30px;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 50px;
+}
+
+
+
+.loguin-box-button:active {
+    color: white
+    
+}
+
+.loguin-box-button:active:after {
+    background: transparent;
+}
+
+.loguin-box-button:hover:before {
+    opacity: 1;
+}
+
+.loguin-box-button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#ED297A;
+    left: 0;
+    top: 0;
+    border-radius: 50px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.loguin-olvidaste {
+    margin-left: 160px;
+    margin-bottom: 200px;
+    
+  }
