@@ -1,0 +1,27 @@
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #292929;
+    color: #fff;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 98.8%;
+    text-align: center;  
+}
+
+.container {
+    overflow: hidden;
+    width: 1200px;
+    max-width: 100%;
+    
+}
+
+@media (max-width: 480px) {
+    .footer {
+      padding: 0.5rem;
+    }
+  }
