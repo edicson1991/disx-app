@@ -4,29 +4,30 @@
 
 
 <section >
-    <div class="loguin-box">
+    <div class="login-box">
         
-                <div class="loguin-img">
+                <div class="login-img">
             
-                     <div class="loguin-img-box">
-                        <img src="../../assets/imagenes-figma/usuario.png" alt="usuario">   
+                     <div class="login-img-box">
+                        <img src="../../../assets/usuario.png" alt="usuario">   
                     </div>
                 </div>
                                                 <section>
-                                                    <div class="loguin-box-credentials">
+                                                    <div class="login-box-credentials">
                                                                 <h2>Nombre<br>de  usuario:<input class="input-nombre" type="text" size="30"  maxlength="50"></h2> <br>
                                                                 <h2>Contraseña:<input class="input-contraseña" type="password" size="30"  maxlength="16"></h2>
                                                     </div>
                                                 </section>
                                                 <section>
                                                     <div>
-                                                        <button class="loguin-box-button" type="button">Iniciar Sesion</button>
+                                                        <button routerLink="/shared/header" class="login-box-button" type="button">Iniciar Sesion</button>
                                                     </div>
                                                 </section>
                                                 <section>
                                                     <div>
-                                                        <a href="pagina" class="loguin-olvidaste"> ¿Olvidaste tu Contraseña?</a>
+                                                        <a routerLink="/shared/header" class="login-olvidaste"> ¿Olvidaste tu Contraseña?</a>
                                                     </div>
                                                 </section>
     </div>
 </section>
+<router-outlet></router-outlet>

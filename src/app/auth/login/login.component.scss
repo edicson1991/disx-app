@@ -1,4 +1,4 @@
-.loguin-box {
+.login-box {
     background-color: #ffffff ;
     width: 500px;
     height: 600px;
@@ -17,7 +17,7 @@
 }
 
 
-.loguin-img-box {
+.login-img-box {
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 30px;
@@ -27,7 +27,7 @@
     
 }
 
-.loguin-img img {
+.login-img img {
 padding-top: 20px;
 margin-left: 100px;
 
@@ -35,7 +35,7 @@ margin-left: 100px;
     height: 200px;
 }
 
-.loguin-box-credentials {
+.login-box-credentials {
    
     color: black;
     margin-top: 50px;
@@ -76,7 +76,7 @@ h2 {
 }
 
 
-.loguin-box-button {
+.login-box-button {
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 80px;
@@ -97,20 +97,20 @@ h2 {
 
 
 
-.loguin-box-button:active {
+.login-box-button:active {
     color: white
     
 }
 
-.loguin-box-button:active:after {
+.login-box-button:active:after {
     background: transparent;
 }
 
-.loguin-box-button:hover:before {
+.login-box-button:hover:before {
     opacity: 1;
 }
 
-.loguin-box-button:after {
+.login-box-button:after {
     z-index: -1;
     content: '';
     position: absolute;
@@ -128,7 +128,7 @@ h2 {
     100% { background-position: 0 0; }
 }
 
-.loguin-olvidaste {
+.login-olvidaste {
     margin-left: 160px;
     margin-bottom: 200px;
     

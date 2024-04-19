@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-dasboard',
   standalone: true,
-  imports: [],
+  imports: [RouterOutlet,RouterLink],
   templateUrl: './dasboard.component.html',
   styleUrl: './dasboard.component.scss'
 })
