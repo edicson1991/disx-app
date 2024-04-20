@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  nav {
+    width: 1200px;
+    height: 80px;
+    gap: 0px;
+    border-radius: 20px; /* Esquinas circulares */
+    opacity: 0px;
+    background: #292929;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .logo {
+    max-height: 50px;
+    border-radius: 10px; /* Esquinas circulares */
+    margin-right: 20px; /* Espacio a la derecha */
+  }
+  .button {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Esquinas circulares */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .button.pink {
+    background-color: #EC407A;
+  }
+  .button.pink:hover {
+    background-color: #E91E63;
+  }
+  .button.gray {
+    background-color: #292929;
+  }
+  .button.gray:hover {
+    background-color: #555555;
+  }
+  .login-button, .register-button, .about-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+  .login-button {
+    width: 106px;
+    height: 44px;
+    top: 22px;
+    left: 1052px;
+  }
+  .register-button {
+    width: 106px;
+    height: 44px;
+    top: 21px;
+    left: 935px;
+  }
+  .about-button {
+    width: 185.63px;
+    height: 48px;
+    top: 10px; /* Ajuste de altura más arriba */
+    left: 726px;
+    padding: 12px 0;
+  }
+  .button a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
