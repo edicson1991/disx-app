@@ -13,8 +13,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 10px;
     margin: 0 auto;
+    margin-top: 40px;
   }
   .logo {
     max-height: 50px;
@@ -50,19 +51,19 @@ body {
   .login-button {
     width: 106px;
     height: 44px;
-    top: 22px;
+
     left: 1052px;
   }
   .register-button {
     width: 106px;
     height: 44px;
-    top: 21px;
+   
     left: 935px;
   }
   .about-button {
     width: 185.63px;
     height: 48px;
-    top: 10px; /* Ajuste de altura más arriba */
+   
     left: 726px;
     padding: 12px 0;
   }
