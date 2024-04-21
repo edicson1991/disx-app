@@ -26,7 +26,7 @@ body::after {
     height: 100px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: auto;
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -48,9 +48,8 @@ margin: 15px;
     border-radius: 15px;
     background-color: #ed297ba8;
     font-size: 16px;
-    width: 130px;
+    width: 150px;
     height: 40px;
-    
 }
 
 .arrow{
