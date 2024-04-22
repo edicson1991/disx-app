@@ -2,13 +2,12 @@ body {
     background-image: url(../../../assets/imagen_fondo/bg-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
-   
 
 }
 
 body::after {
     content: "";
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -21,17 +20,40 @@ body::after {
     background-color: #ffffff;
     position: relative;
     padding: 150px;
-    border: 5px solid #ED297A;
+    border: 10px solid #ED297A;
+    border-radius: 15px;
     width: 40%;
-    height: 150px;
+    height: 100px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 250px;
+    margin-top: auto;
     z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .frame{
 position: absolute;
-bottom: 15;
-right: 15;
+bottom: 0;
+right: 0;
+margin: 15px;
+
+}
+
+.next-button {
+    color: white;
+    border: 5px #ed297ba8;
+    border-radius: 15px;
+    background-color: #ed297ba8;
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+}
+
+.arrow{
+    color: white;
+    font-size: 18px;
+    margin-left: 5px;
 }
