@@ -1,8 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
+
   nav {
     width: 1200px;
     height: 80px;
@@ -26,7 +22,7 @@ body {
     color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 20px; /* Esquinas circulares */
+    border-radius: 4px; /* Esquinas circulares */
     text-decoration: none;
     transition: background-color 0.3s ease;
   }
@@ -51,25 +47,27 @@ body {
   .login-button {
     width: 106px;
     height: 44px;
-
     left: 1052px;
   }
   .register-button {
     width: 106px;
     height: 44px;
-   
     left: 935px;
-  }
+  }s
   .about-button {
     width: 185.63px;
     height: 48px;
-   
     left: 726px;
     padding: 12px 0;
   }
   .button a {
     color: #fff;
     text-decoration: none;
+  }
+
+  .btn-box__nav{
+    display: flex; 
+  gap: 10px; 
   }
   
   

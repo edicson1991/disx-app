@@ -1,9 +1,10 @@
 .banner {
+    background-color: white;
     display: flex; /* Activar el modo flexbox */
     justify-content: center; /* Alinear elementos horizontalmente al centro */
     align-items: center; /* Alinear elementos verticalmente al centro */
     gap: 70px 40px;
-    margin: 70px auto; /* Agregar margen superior e inferior y centrar horizontalmente */
+    margin: 160px auto; /* Agregar margen superior e inferior y centrar horizontalmente */
     width: 70%; /* Ajustar el ancho del banner */
     height: 70px; /* Ajustar altura del banner */
     max-width: 1000px; /* Ancho máximo para pantallas grandes */
