@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import {HeaderComponent} from './shared/header/header.component'
-
 import { BannerComponent } from './shared/banner/banner.component'
 import { FooterComponent } from './shared/footer/footer.component';
 
