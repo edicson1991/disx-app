@@ -5,7 +5,7 @@ import { HeaderComponent } from '../../shared/header/header.component';
 @Component({
   selector: 'app-dasboard',
   standalone: true,
-  imports: [RouterOutlet,RouterLink,HeaderComponent],
+  imports: [RouterOutlet,RouterLink,HeaderComponent, DasboardComponent],
   templateUrl: './dasboard.component.html',
   styleUrl: './dasboard.component.scss'
 })
