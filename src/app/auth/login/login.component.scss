@@ -1,21 +1,19 @@
 .login-box {
-    background-color: #ffffff ;
-    width: 500px;
-    height: 600px;
-    border-color: #000000;
-   margin-top: 150px;
-   margin-inline-start: 600px;
-   padding-bottom: 80px;
-   padding-top: 15px;
-  border: 20px solid #ED297A;
-  border-radius: 20px ;
-  box-shadow: 20px 20px 20px gray;
-  
-  
-   
+ background-color: #ffffff ;
+ width: 500px;
+ height: auto;
+ border-color: #000000;
+ padding-bottom: 80px;
+ padding-top: 15px;
+ border: 20px solid #ED297A;
+ border-radius: 20px ;
+ box-shadow: 1px 1px 40px rgb(255, 247, 247);
+ max-width: 100%;
+ margin: auto;
+ margin-top: 40px;
+
     
 }
-
 
 .login-img-box {
     margin-left: 50px;
@@ -28,15 +26,17 @@
 }
 
 .login-img img {
-padding-top: 20px;
-margin-left: 100px;
-
+   padding-top: 20px;
+   margin-left: 100px;
     width: 200px;
     height: 200px;
 }
 
-.login-box-credentials {
-   
+.form-login {
+display: grid;
+grid-template-columns: repeat(2 );
+grid-gap:10px;
+
     color: black;
     margin-top: 50px;
     padding-top: 50px;
@@ -48,7 +48,7 @@ margin-left: 100px;
     padding-bottom: 10px;
 }
 
-.input-nombre {
+input {
     border:2px solid #ED297A ;
     margin-inline-start: 17px;
     border-radius: 10px;
@@ -59,14 +59,6 @@ margin-left: 100px;
     
 }
 
-.input-contraseña {
-    border:2px solid #ED297A ;
-    margin-inline-start: 5px;
-    border-radius: 10px;
-    width: 230px;
-    height: 30px;
-    font-size: 20px;
-}
 h2 {
     font:verdana;
     font-size: 26px;
@@ -76,7 +68,7 @@ h2 {
 }
 
 
-.login-box-button {
+button {
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 80px;
@@ -97,20 +89,20 @@ h2 {
 
 
 
-.login-box-button:active {
+button:active {
     color: white
     
 }
 
-.login-box-button:active:after {
+button:active:after {
     background: transparent;
 }
 
-.login-box-button:hover:before {
+button:hover:before {
     opacity: 1;
 }
 
-.login-box-button:after {
+button:after {
     z-index: -1;
     content: '';    
     position: absolute;
