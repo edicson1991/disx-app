@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet,} from '@angular/router';
 import { AuthService } from '../../auth.service';
 import { FormsModule } from '@angular/forms';
 
@@ -22,6 +22,8 @@ export class LoginComponent {
 
   login(): void {
     if (this.authService.authenticate(this.username, this.password)) {
+     
+
       // Si las credenciales son correctas, redirecciona al usuario a la página de inicio
       // Aquí puedes usar Angular Router para navegar a la página de inicio
     } else {
