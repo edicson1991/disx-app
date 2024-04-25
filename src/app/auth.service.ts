@@ -5,10 +5,16 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
 
+  private isAuthenticatedFlag: boolean = false;
   private readonly username = 'usuario';
   private readonly password = 'contraseña';
 
   authenticate(username: string, password: string): boolean {
-    return username === this.username && password === this.password;
+    this.isAuthenticatedFlag = (username === this.username && password === this.password);
+    return this.isAuthenticatedFlag;
+  }
+
+  isAuthenticated(): boolean {
+    return this.isAuthenticatedFlag;
   }
 }

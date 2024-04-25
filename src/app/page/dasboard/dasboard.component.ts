@@ -5,12 +5,12 @@ import { HeaderComponent } from '../../shared/header/header.component';
 @Component({
   selector: 'app-dasboard',
   standalone: true,
-  imports: [RouterOutlet,RouterLink,HeaderComponent, DasboardComponent],
+  imports: [RouterOutlet,RouterLink,HeaderComponent],
   templateUrl: './dasboard.component.html',
   styleUrl: './dasboard.component.scss'
 })
 export class DasboardComponent {
 
-  
+
 
 }
