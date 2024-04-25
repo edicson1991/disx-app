@@ -12,7 +12,7 @@ const routes: Routes = [
     { path: 'auth/login', component: LoginComponent },
     { path: 'page', component: LayoutComponent, children:[
         { path: 'home', component: HomeComponent},
-        { path: 'dasboard', component: DasboardComponent }
+        { path: 'dasboard', component: DasboardComponent,  }
     ] },
 
     { path: '', redirectTo: 'page/home', pathMatch: 'full' },
