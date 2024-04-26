@@ -6,7 +6,7 @@ import { PruebaComponent } from '../../prueba/prueba.component';
 @Component({
   selector: 'app-dasboard',
   standalone: true,
-  imports: [RouterOutlet,RouterLink,HeaderComponent, DasboardComponent, PruebaComponent],
+  imports: [RouterOutlet,RouterLink,HeaderComponent, DasboardComponent, PruebaComponent,],
   templateUrl: './dasboard.component.html',
   styleUrl: './dasboard.component.scss'
 })
