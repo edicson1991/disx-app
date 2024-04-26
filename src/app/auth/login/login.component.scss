@@ -35,14 +35,10 @@
 .form-login {
 display: grid;
 grid-template-columns: repeat(2 );
-grid-gap:20px;
-
-    color: #BLACK;
-    margin-top: 50px;
+grid-gap:10px;
+    color: black;
     padding-top: 50px;
-    margin-left: 40px;
-    margin-right: 40px;
-    border-radius: 30px;;
+    border-radius: 30px;  
     padding-top: 10px;
     padding-bottom: 10px;
     font: verdana;

@@ -8,15 +8,16 @@
                     </div>
                 </div>
 
-                <form class="form-login">
-                    <label for="">Usuario </label>
-                    <input type="text" id="username" name="username" placeholder="   Ingrese su nombre" [(ngModel)]="username" required> 
-                    <label for="password" > Contraseña</label>
-                    <input type="password" id="password" name="password" placeholder="   Ingrese su contraseña"  [(ngModel)]="password" required>
-                    <button type=""> Iniciar sesión</button>
-                </form>
+                <form class="form-login" (ngSubmit)="login()">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" [(ngModel)]="username" required>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" [(ngModel)]="password" required>
+                    <button type="submit">Iniciar sesión</button>
+                    <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+                  </form>
 
-                <p ngIf="errorMessage" class="error-menssage">{{ errorMessage }}</p>
+                <p *ngIf="errorMessage" class="error-menssage">{{ errorMessage }}</p>
                                                
     </div>
 </section>
