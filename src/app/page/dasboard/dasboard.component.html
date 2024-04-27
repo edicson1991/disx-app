@@ -3,8 +3,10 @@
     <div class="area-juego">  
         
         <div class="frame">
-            <button type="submit" class="next-button">Siguiente <span class="arrow">→</span></button>
+            <button type="submit" class="next-button" (click)="siguiente"> Siguiente <span class="arrow">→</span></button>
         </div>    
 </div>
+<img *ngIf="bajo_riesgo" src="/src/assets/imagen_disx/bajo_riesgo.png" alt="Riesgo Bajo">
+<img *ngIf="alto_riesgo" src="/src/assets/imagen_disx/riesgo_alto.png" alt="Riesgo Alto">
 </section>
 
