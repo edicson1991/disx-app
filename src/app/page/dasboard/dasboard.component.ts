@@ -12,15 +12,16 @@ import { MatButtonModule } from '@angular/material/button';
   styleUrl: './dasboard.component.scss'
 })
 export class DasboardComponent {
-
-  public prueba = 0;
-
-  siguiente () {
-    this.prueba++ ;
-  }
-  
   bajo_riesgo: boolean = false;
   alto_riesgo: boolean = true;
+
+  testPrueba = 0;
+
+  siguiente () {
+    this.testPrueba++ ;
+  }
+  
+
   
 
 }
