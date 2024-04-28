@@ -10,7 +10,6 @@ import { PruebaComponent } from "../../prueba/prueba.component";
   selector: 'app-dasboard',
   standalone: true,
   imports: [RouterOutlet, RouterLink, HeaderComponent, DasboardComponent, CommonModule, MatButtonModule, PruebaComponent,],
-  imports: [RouterOutlet,RouterLink,HeaderComponent,DasboardComponent,CommonModule ],
   templateUrl: './dasboard.component.html',
   styleUrl: './dasboard.component.scss'
    
