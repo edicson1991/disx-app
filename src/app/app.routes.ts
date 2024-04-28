@@ -8,6 +8,7 @@ import { HomeComponent } from './page/home/home.component';
 import { authGuard } from './guard/auth.guard';
 import { PruebaComponent } from './prueba/prueba.component';
 
+
  
 // Define tus rutas
 const routes: Routes = [
