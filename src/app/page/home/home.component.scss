@@ -30,7 +30,7 @@
     align-items: center; 
   }
 
-  .content-title__btn button {
+  .content-title__btn a {
    font-size: 1.3rem;
    color: white;
    background-color: #EC407A ;
@@ -38,8 +38,9 @@
    border: #EC407A solid 0px;
    width: auto;
    height: 42px;
-   padding: 0 10px 0 10px;
+   padding: 5px 10px 5px 10px;
    margin-top:20px ;
+
    
 }
 
