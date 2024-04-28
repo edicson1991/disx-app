@@ -17,8 +17,17 @@ export class DasboardComponent {
 
   testPrueba = 0;
 
-  siguiente () {
+  runPrueba () {
     this.testPrueba++ ;
+
+  }
+
+  pruebaActiva () {
+
+  }
+
+  finalizarPrueba () {
+    
   }
   
 
