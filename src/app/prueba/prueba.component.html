@@ -30,7 +30,7 @@
 
     <span *ngIf="id.get('id') === '4'">
         <h2>
-            Selecciona la letra diferente          
+            Selecciona la sílaba diferente          
         </h2>
         <div class="container">
             <span *ngFor="let letra of letras" class="letra" (click)="print(letra)">{{letra}}</span>
@@ -58,7 +58,7 @@
 
     <span *ngIf="id.get('id') === '8'">
         <p>Comienza eligiendo el tema:</p>
-        <a  routerLink = "/page/dasboard/9/prueba" > Fracciones </a>
+        <a  routerLink = "/page/dasboard/9/prueba"> Fracciones </a>
         <a  routerLink = "@" > Identifica las operaciones entre números racionales </a>
         <a  routerLink = "@" > Aplicación del primer teorema de Tales </a>
     </span>
@@ -68,7 +68,11 @@
     </span>
 
     <span *ngIf="id.get('id') === '10'">
-        <iframe src="https://phet.colorado.edu/sims/html/fractions-equality/latest/fractions-equality_all.html?locale=es"  title="juego" width="700" height="400"></iframe>
+        <iframe src="https://phet.colorado.edu/sims/html/fractions-equality/latest/fractions-equality_all.html?locale=es"  title="juego" width="900" height="400" class="imagen"></iframe>
+    </span>
+
+    <span *ngIf="id.get('id') === '11'">
+        <iframe src="https://www.thatquiz.org/es-3/matematicas/fraccion/"  title="juego" width="900" height="400" class="imagen"></iframe>
     </span>
 
 
