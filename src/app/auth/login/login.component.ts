@@ -23,7 +23,7 @@ export class LoginComponent {
   login(): void {
     if (this.authService.authenticate(this.username, this.password)) {
       // Si las credenciales son correctas, redirecciona al usuario al dasboard
-      this.router.navigate(['/page/dasboard']);  
+      this.router.navigate(['/page/dasboard/1/prueba']);  
     } else {
       // Si las credenciales son incorrectas, muestra un mensaje de error
       this.errorMessage = 'Usuario o contraseña incorrectos';

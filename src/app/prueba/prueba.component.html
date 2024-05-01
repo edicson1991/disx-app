@@ -1,0 +1,26 @@
+
+
+<div class="test">
+
+    <h2>
+        {{texto}}            
+    </h2>
+    <img [src]="imagen" class="imagen">
+    
+    
+    <div class="container">
+        <span *ngFor="let letra of letras" class="letra" (click)="print(letra)">{{letra}}</span>
+    </div>
+    
+
+    <button ></button>
+
+
+    <div *ngIf="id==='5'" class="respues">
+        <img *ngIf="contador>= 2" src="/src/assets/imagen_disx/bajo_riesgo.png" alt="Riesgo Bajo">
+        <img *ngIf="!(contador>= 2)"  src="/src/assets/imagen_disx/riesgo_alto.png" alt="Riesgo Alto">
+    </div>
+    
+
+</div>
+
