@@ -4,11 +4,12 @@
 
         <prueba></prueba>     
         <div class="frame">
-            <button type="submit" class="next-button" (click)="runPrueba()" [disabled]="pruebaActiva"> Siguiente <span class="arrow">→</span></button>
-            <button type="submit" class="next-button" (click)="finalizarPrueba()" [disabled]="!pruebaActiva" [ngClass]= "{'hide': !pruebaActiva }"> Finalizar </button>
+            <span *ngIf="id$ | async as id">
+            <button  *ngIf="id && convert(id) < 4" class="next-button" (click)="runPrueba(id)" > Siguiente <span class="arrow">→</span></button>
+            <button *ngIf="id && id.get('id') === '4'" class="next-button" (click)="runPrueba(id)"> Finalizar </button>
+            </span>
+
         </div>   
-          
-    
     </div>
 
 

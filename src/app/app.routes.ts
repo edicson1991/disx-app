@@ -17,13 +17,15 @@ const routes: Routes = [
     { path: 'page', component: LayoutComponent, children:[
         { path: 'home', component: HomeComponent},
         {
-            path: 'dasboard/:id', component: DasboardComponent,canActivate: [authGuard], children: [
+            path: 'dasboard/:id', component: DasboardComponent,
+            //canActivate: [authGuard], 
+            children: [
                 { path: 'prueba', component: PruebaComponent, },   
             ]
         },
-        { path: 'dasboard', component: DasboardComponent,canActivate:[
-            authGuard
-        ] }
+        { path: 'dasboard', component: DasboardComponent,
+        //canActivate:[authGuard]
+        }
     ] },
  
     { path: '', redirectTo: 'page/home', pathMatch: 'full' },

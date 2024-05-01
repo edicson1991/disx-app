@@ -1,26 +1,53 @@
 
-
 <div class="test">
+<ng-container *ngIf="id$ | async as id">
 
-    <h2>
-        {{texto}}            
-    </h2>
-    <img [src]="imagen" class="imagen">
-    
-    
-    <div class="container">
-        <span *ngFor="let letra of letras" class="letra" (click)="print(letra)">{{letra}}</span>
-    </div>
-    
-
-    <button ></button>
+    <span *ngIf="id.get('id') === '1'">
+        <h2>
+            Es tiempo de comenzar tu prueba, sigue las siguientes instrucciones:           
+        </h2>
+        <img src="../../assets/imagen_page/Previo_a_la_prueba.png" class="imagen">
+    </span>
 
 
-    <div *ngIf="id==='5'" class="respues">
-        <img *ngIf="contador>= 2" src="/src/assets/imagen_disx/bajo_riesgo.png" alt="Riesgo Bajo">
-        <img *ngIf="!(contador>= 2)"  src="/src/assets/imagen_disx/riesgo_alto.png" alt="Riesgo Alto">
-    </div>
-    
+    <span *ngIf="id.get('id') === '2'">
+        <h2>
+            Selecciona la letra diferente          
+        </h2>
+        <div class="container">
+            <span *ngFor="let letra of letras" class="letra" (click)="print(letra)">{{letra}}</span>
+        </div>
+    </span>
+
+    <span *ngIf="id.get('id') === '3'">
+        <h2>
+            Selecciona la letra diferente          
+        </h2>
+        <div class="container">
+            <span *ngFor="let letra of letras" class="letra" (click)="print(letra)">{{letra}}</span>
+        </div>
+    </span>
+
+    <span *ngIf="id.get('id') === '4'">
+        <h2>
+            Selecciona la letra diferente          
+        </h2>
+        <div class="container">
+            <span *ngFor="let letra of letras" class="letra" (click)="print(letra)">{{letra}}</span>
+        </div>
+    </span>
+
+    <span *ngIf="id.get('id') === '5'">
+        <h2>
+           Tu resultado Fue      
+        </h2>
+        <div> 
+            <img *ngIf="contador <= 1" src="/assets/imagen_disx/bajo_riesgo.png" alt="" class="imagen">
+            <img *ngIf="contador > 1" src="/assets/imagen_disx/riesgo_alto.png" alt="" class="imagen">
+        </div>
+
+    </span>
+</ng-container>
 
 </div>
 

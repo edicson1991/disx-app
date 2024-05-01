@@ -1,18 +1,19 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
+import { BehaviorSubject, Observable, Subject, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ConteoService {
 
-  private contador = 0;
+  private contador = new BehaviorSubject<number>(0);
   constructor() { }
-  public sumar(): void { 
-    this.contador += 1; // Emite el nuevo valor del contador 
+  public sumar(n:number){
+    this.contador.next(n);
+  }; // Emite el nuevo valor del contador 
    
-  }
-  mostrarContador(): number {
+  
+  public mostrarContador(): Observable<number> {
     console.log('estoy desde el servicio')
     return this.contador
   }

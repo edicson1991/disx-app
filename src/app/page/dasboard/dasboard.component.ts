@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterLink, RouterOutlet } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '../../shared/header/header.component';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
@@ -19,12 +19,18 @@ import { PruebaComponent } from "../../prueba/prueba.component";
 
 export class DasboardComponent  implements OnInit{
 
+  id$ = this.activatedRoute.paramMap
+  idNumber = 0
+
   
-  constructor(private activatedRoute: ActivatedRoute) {   }
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private router: Router
+  ) {   }
 
 
   ngOnInit(): void {
-  
+    this.id$.subscribe(console.log)
   }
 
   bajo_riesgo: boolean = false;
@@ -32,18 +38,23 @@ export class DasboardComponent  implements OnInit{
 
   testPrueba = 0;
 
-  runPrueba () {
-    this.testPrueba++ ;
+  runPrueba (id: any) {
+    console.log(id.get('id'))
+    const param =  parseInt(id.get('id'))
+    this.router.navigate([`/page/dasboard/${param+1}/prueba`]);
 
   }
 
-  pruebaActiva () {
-
+  convert (id:any) {
+    return parseInt(id.get('id'))
   }
 
   finalizarPrueba () {
 
   }
   
+  answer() {
+    
+  }
 
 }
