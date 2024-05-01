@@ -47,6 +47,31 @@
         </div>
 
     </span>
+
+    <span *ngIf="id.get('id') === '6'">
+        <img src="../../assets/imagen_page/Mat1.png" class="imagen">
+    </span>
+
+    <span *ngIf="id.get('id') === '7'">
+        <img src="../../assets/imagen_page/Mat2.png" class="imagen">
+    </span>
+
+    <span *ngIf="id.get('id') === '8'">
+        <p>Comienza eligiendo el tema:</p>
+        <a  routerLink = "/page/dasboard/9/prueba" > Fracciones </a>
+        <a  routerLink = "@" > Identifica las operaciones entre números racionales </a>
+        <a  routerLink = "@" > Aplicación del primer teorema de Tales </a>
+    </span>
+
+    <span *ngIf="id.get('id') === '9'">
+        <img src="../../assets/imagen_page/Mat3.png" class="imagen">
+    </span>
+
+    <span *ngIf="id.get('id') === '10'">
+        <iframe src="https://phet.colorado.edu/sims/html/fractions-equality/latest/fractions-equality_all.html?locale=es"  title="juego" width="700" height="400"></iframe>
+    </span>
+
+
 </ng-container>
 
 </div>
