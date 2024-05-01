@@ -1,8 +1,8 @@
 
 <section class="play">
     <div class="area-juego">  
-
-        <prueba></prueba>     
+        
+        <iframe src="https://phet.colorado.edu/sims/html/fractions-equality/latest/fractions-equality_all.html?locale=es"  title="juego" width="700" height="400"></iframe>
         <div class="frame">
             <span *ngIf="id$ | async as id">
             <button  *ngIf="id && convert(id) < 4" class="next-button" (click)="runPrueba(id)" > Siguiente <span class="arrow">→</span></button>

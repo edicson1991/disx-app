@@ -23,11 +23,13 @@ const routes: Routes = [
                 { path: 'prueba', component: PruebaComponent, },   
             ]
         },
-        { path: 'dasboard', component: DasboardComponent,
-        //canActivate:[authGuard]
-        }
+        { path: 'dasboard', component: DasboardComponent,canActivate:[
+            authGuard
+
+        ], children:[] } 
+
     ] },
- 
+
     { path: '', redirectTo: 'page/home', pathMatch: 'full' },
  
 ];
