@@ -11,7 +11,7 @@ import { PruebaComponent } from './prueba/prueba.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, HeaderComponent, FooterComponent, BannerComponent, DasboardComponent, FormsModule, PruebaComponent],
+  imports: [RouterOutlet, RouterLink, HeaderComponent, FooterComponent, BannerComponent, DasboardComponent, FormsModule, PruebaComponent,],
   templateUrl:'./app.component.html',
   styleUrl: './app.component.scss'
   

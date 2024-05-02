@@ -7,6 +7,7 @@ import { LayoutComponent } from './shared/layout/layout.component';
 import { HomeComponent } from './page/home/home.component';
 import { authGuard } from './guard/auth.guard';
 import { PruebaComponent } from './prueba/prueba.component';
+import { Home2Component } from './page/home2/home2.component';
 
 
  
@@ -14,7 +15,9 @@ import { PruebaComponent } from './prueba/prueba.component';
 const routes: Routes = [
     
     { path: 'auth/login', component: LoginComponent },
-    { path: 'page', component: LayoutComponent, children:[
+    { path: 'page/home2', component: Home2Component},
+
+    {path: 'page', component: LayoutComponent, children:[
         { path: 'home', component: HomeComponent},
         {
             path: 'dasboard/:id', component: DasboardComponent, canActivate: [authGuard], 
@@ -28,7 +31,11 @@ const routes: Routes = [
 
     ] },
 
+    
+
     { path: '', redirectTo: 'page/home', pathMatch: 'full' },
+    { path: '', redirectTo: 'page/home2', pathMatch: 'full' },
+    
  
 ];
  
