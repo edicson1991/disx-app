@@ -57,11 +57,15 @@
     </span>
 
     <span *ngIf="id.get('id') === '8'">
-        <p>Comienza eligiendo el tema:</p>
-        <a  routerLink = "/page/dasboard/9/prueba"> Fracciones </a>
-        <a  routerLink = "@" > Identifica las operaciones entre números racionales </a>
-        <a  routerLink = "@" > Aplicación del primer teorema de Tales </a>
+        <p class="list-anchor-h2">Comienza eligiendo el tema:</p>
+        <ul class="list-anchor">
+            <li><a routerLink = "/page/dasboard/9/prueba"> Fracciones </a></li>
+            <li><a> Identifica las operaciones entre números racionales </a></li>
+            <li><a> Aplicación del primer teorema de Tales </a></li>
+        </ul>       
     </span>
+
+   
 
     <span *ngIf="id.get('id') === '9'">
         <img src="../../assets/imagen_page/Mat3.png" class="imagen">
@@ -79,4 +83,6 @@
 </ng-container>
 
 </div>
+
+
 

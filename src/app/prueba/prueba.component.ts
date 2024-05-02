@@ -1,14 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, inject } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, RouterLink, RouterOutlet } from '@angular/router';
 import { Observable, map, switchMap, take } from 'rxjs';
 import { ConteoService } from '../service/conteo.service';
+
+
 
 
 @Component({
   selector: 'prueba',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,RouterLink, RouterOutlet ],
   providers: [ConteoService],
   templateUrl: './prueba.component.html',
   styleUrl: './prueba.component.scss'
